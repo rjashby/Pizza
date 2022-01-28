@@ -47,6 +47,11 @@ _This application will_
 
 ## Tests/Specs
 
+Describe: Pizza(size, [toppings])
+
+Test: "It should return a Pizza object with size and toppings properties"
+Code: const pizza = new Pizza("large", ["cheese", "pepperoni"]);
+Expected Output: Pizza {size: "large", toppings: ["cheese", "pepperoni"], }
 
 
 ## Known Bugs 

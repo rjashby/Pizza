@@ -5,11 +5,7 @@ function Pizza(size, [topping1, topping2, topping3], style) {
   this.style = style
 }
 
-const pizza = new Pizza("large", ["cheese", "pepperoni", "sausage"], "new york");
-
-Pizza.prototype.cost = function() {
-  let cost = 0;
-}
+const pizza = new Pizza("medium", ["cheese", "pepperoni", "sausage"], "new york");
 console.log(pizza);
 
 // UI Logic

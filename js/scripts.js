@@ -10,6 +10,10 @@ Pizza.prototype.cost = function() {
 
   if (this.size === "medium") {
     cost += 9;
+  } else if (this.size === "medium") {
+    cost =+ 12;
+  } else if (this.size === "medium") {
+    cost =+ 15;
   }
   return cost;
 }

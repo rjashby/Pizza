@@ -49,7 +49,7 @@ _This application will_
 
 Describe: Pizza(size, ["topping1", "topping2"])
 
-Test: "It should return a Pizza object with size and toppings properties"
+Test: "It should return a Pizza object with size and toppings properties."
 Code: const pizza = new Pizza("large", ["cheese", "pepperoni"]);
 Expected Output: Pizza {size: "large", toppings: ["cheese", "pepperoni"], }
 
@@ -60,7 +60,7 @@ Expected Output: Pizza {size: "large", toppings: ["cheese", "pepperoni", "sausag
 
 Describe: Pizza.prototype.cost
 
-Test: "It should build a prototype method for our Pizza constructor, with a variable to initiate a cost variable, set to 0"
+Test: "It should build a prototype method for our Pizza constructor, with a variable to initiate a cost variable, set to 0."
 Code: Pizza.prototype.cost = function() {
   let cost = 0;
 }
@@ -68,7 +68,7 @@ let pizza = new Pizza
 pizza.cost();
 Expected Output: A new pizza object, with cost presently undefined.
 
-Test: "It should take out cost prototype and increment the value up as different sizes values are provided"
+Test: "It should take our cost prototype and increment it upward as different sizes values are provided."
 Code: Pizza.prototype.cost = function() {
   let cost = 0;
 
@@ -79,6 +79,18 @@ Code: Pizza.prototype.cost = function() {
 }
 console.log(pizza.cost());
 Expected Output: 9
+
+Test: "It should take our cost prototype and increment it upwards as different style values are provided."
+Code: Pizza.prototype.cost = function() {
+  let cost = 0;
+
+  if (this.style === "newyork") {
+    cost += 1;
+  }
+  return cost;
+}
+console.log(pizza.cost());
+Expected Output: 1
 
 ## Known Bugs 
 

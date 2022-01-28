@@ -54,6 +54,13 @@ Code: const pizza = new Pizza("large", ["cheese", "pepperoni"]);
 Expected Output: Pizza {size: "large", toppings: ["cheese", "pepperoni"], }
 
 
+Describe: Pizza(size, ["topping1", "topping2", "topping3"], style)
+
+Test: "It should return a Pizza object with size and toppings and type properties"
+Code: const pizza = new Pizza("large", ["cheese", "pepperoni", "sausage"], "new york");
+Expected Output: Pizza {size: "large", toppings: ["cheese", "pepperoni", "sausage"], style: "new york"}
+
+
 ## Known Bugs 
 
 * _No Known Bugs._  

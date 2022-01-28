@@ -5,6 +5,14 @@ function Pizza(size, [topping1, topping2, topping3], style) {
   this.style = style
 }
 
+Pizza.prototype.cost = function() {
+  let cost = 0;
+
+  if (this.size === "medium") {
+    cost += 9;
+  }
+  return cost;
+}
 const pizza = new Pizza("medium", ["cheese", "pepperoni", "sausage"], "new york");
 console.log(pizza);
 

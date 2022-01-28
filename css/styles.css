@@ -16,7 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111;
+  background: rgb(75, 68, 68);
   color: #fff;
   z-index: 2;
 }
@@ -54,44 +54,23 @@
   position: absolute;
   z-index: 10;
   bottom: 10%;
-  left: 35%;
+  left: 34%;
   background: antiquewhite;
   mix-blend-mode: overlay;
   font-size: larger;
-}
-
-/* .output {
   display: none;
-  background-color: antiquewhite;
-} */
-
-/* div {
-  margin: 2rem;
 }
 
-h1 {
-  text-align: center;
+div {
+  margin: 1rem;
 }
 
-h4 {
-  text-align: center;
+form {
+  border: 8px solid antiquewhite;
 }
 
-p {
-  font-size: larger;
-}
-
-input {
-  font-size: larger;
-} */
-/* html {
-  font-family: sans-serif;
-}
-
-div:first-of-type {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 5px;
+button {
+  margin: 15px;
 }
 
 label {
@@ -100,15 +79,11 @@ label {
 }
 
 input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
-
   border-radius: 50%;
   width: 16px;
   height: 16px;
-
-  border: 2px solid #999;
+  border: 2px solid black;
   transition: 0.2s all linear;
   margin-right: 5px;
 

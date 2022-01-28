@@ -54,12 +54,19 @@ Code: const pizza = new Pizza("large", ["cheese", "pepperoni"]);
 Expected Output: Pizza {size: "large", toppings: ["cheese", "pepperoni"], }
 
 
-Describe: Pizza(size, ["topping1", "topping2", "topping3"], style)
-
 Test: "It should return a Pizza object with size and toppings and type properties"
 Code: const pizza = new Pizza("large", ["cheese", "pepperoni", "sausage"], "new york");
 Expected Output: Pizza {size: "large", toppings: ["cheese", "pepperoni", "sausage"], style: "new york"}
 
+Describe: Pizza.prototype.cost
+
+Test: "It should build a prototype method for our Pizza constructor, with a variable to initiate a cost variable, set to 0"
+Code: Pizza.prototype.cost = function() {
+  let cost = 0;
+}
+let pizza = new Pizza
+pizza.cost();
+Expected Output: A new pizza object, with cost presently undefined.
 
 ## Known Bugs 
 

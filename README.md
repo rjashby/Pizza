@@ -92,6 +92,18 @@ Code: Pizza.prototype.cost = function() {
 console.log(pizza.cost());
 Expected Output: 1
 
+Test: "It should take our cost prototype and increment it upwards as different topping values are provided."
+Code: Pizza.prototype.cost = function() {
+  let cost = 0;
+
+  if (this.topping1 === "pepperoni") {
+    cost += 2;
+  }
+  return cost;
+}
+console.log(pizza.cost());
+Expected Output: 2
+
 ## Known Bugs 
 
 * _No Known Bugs._  

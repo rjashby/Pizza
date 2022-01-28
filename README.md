@@ -47,7 +47,7 @@ _This application will_
 
 ## Tests/Specs
 
-Describe: Pizza(size, [toppings])
+Describe: Pizza(size, ["topping1", "topping2"])
 
 Test: "It should return a Pizza object with size and toppings properties"
 Code: const pizza = new Pizza("large", ["cheese", "pepperoni"]);

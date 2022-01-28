@@ -18,11 +18,11 @@ Pizza.prototype.cost = function() {
     cost =+ 15;
   }
   
-  if (this.style === "New York") {
+  if (this.style === "New York Style") {
     cost += 1;
-  } else if (this.style === "Chicago") {
+  } else if (this.style === "Chicago Style") {
     cost += 4;
-  } else if (this.style === "Detroit") {
+  } else if (this.style === "Detroit Style") {
     cost += 3;
   }
 

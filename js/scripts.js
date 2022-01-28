@@ -1,8 +1,7 @@
 // Business Logic
-function Pizza(size, style, [topping1, topping2, topping3]) {
+function Pizza(size, style, topping1, topping2, topping3) {
   this.size = size;
   this.style = style
-  this.toppings = [topping1, topping2, topping3]
   this.topping1 = topping1;
   this.topping2 = topping2;
   this.topping3 = topping3;
@@ -15,15 +14,15 @@ Pizza.prototype.cost = function() {
     cost += 9;
   } else if (this.size === "large") {
     cost =+ 12;
-  } else if (this.size === "extra") {
+  } else if (this.size === "extra large") {
     cost =+ 15;
   }
   
-  if (this.style === "new york") {
+  if (this.style === "New York") {
     cost += 1;
-  } else if (this.size === "chicago") {
+  } else if (this.style === "Chicago") {
     cost += 4;
-  } else if (this.size === "detroit") {
+  } else if (this.style === "Detroit") {
     cost += 3;
   }
 
@@ -94,8 +93,6 @@ Pizza.prototype.cost = function() {
   }
   return cost;
 }
-const pizza = new Pizza("medium", ["cheese", "pepperoni", "sausage"], "new york");
-console.log(pizza);
 
 // UI Logic
 
@@ -107,14 +104,19 @@ $(document).ready(function() {
     let topping1 = $("input:radio[name=topping1]:checked").val();
     let topping2 = $("input:radio[name=topping2]:checked").val();
     let topping3 = $("input:radio[name=topping3]:checked").val();
-    const myPizza = new Pizza(size, style, [topping1, topping2, topping3]);
+    const myPizza = new Pizza(size, style, topping1, topping2, topping3);
     console.log(myPizza);
     console.log(size);
     console.log(style);
     console.log(topping1);
     console.log(topping2);
     console.log(topping3);
-    // console.log(toppings);
+    $("#finalSize").text(size);
+    $("#finalStyle").text(style);
+    $("#finalTopping1").text(topping1);
+    $("#finalTopping2").text(", " + topping2);
+    $("#finalTopping3").text(", " + topping3);
+    $("#finalCost").text(myPizza.cost().toFixed(2));
     $(".output").fadeIn();
     window.scrollTo(0,document.body.scrollHeight);
   })

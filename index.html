@@ -10,107 +10,118 @@
   <title>Luigi Mario's Pizza Shop</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Luigi Mario's Pizza Shop</h1>
-    <h4><em>NOT Mario Mario's Pizza Shop! Don't mention my brother's name!</em></h4>
-    <form id="pizzaMaker">
-      <div class="row">
-        <div class="col">
-          <p>Pick A Size!</p>
-            <select id="size" class="form-control" required>
-              <option value="">Choose Your Size:</option>
-              <option value="medium">Medium Pie: 14 Inches</option>
-              <option value="large">Large Pie: 18 Inches</option>
-              <option value="extra large">Extra Large Pie: 24 Inches</option>
-            </select>
+  <video src="video\medium.mp4" loop autoplay></video>
+  <section class="main">
+    <header>
+      <h1>Luigi Mario's Pizza Shop</h1>
+      <h4><em>NOT Mario Mario's Pizza Shop! Don't mention my brother's name!</em></h4>
+    </header>
+    <div class="overlay"></div>
+    <div class="myForm">
+      <form id="pizzaMaker">
+        <div class="row">
+          <div class="col">
+            <p>Pick A Size!</p>
+              <select id="size" class="form-control" required>
+                <option value="">Choose Your Size:</option>
+                <option value="medium">Medium Pie: 14 Inches</option>
+                <option value="large">Large Pie: 18 Inches</option>
+                <option value="extra large">Extra Large Pie: 24 Inches</option>
+              </select>
+          </div>
+          <div class="col">
+            <p>Choose a Style!</p>
+              <select id="style" class="form-control" required>
+                <option value="">Choose Your Style Pizza:</option>
+                <option value="New York Style">New York Style - Thin Crust</option>
+                <option value="Chicago Style">Chicago Style - Deep Dish</option>
+                <option value="Detroit Style">Detroit Style - Square with Crispy Edges</option>
+              </select>  
+          </div>
         </div>
-        <div class="col">
-          <p>Choose a Style!</p>
-            <select id="style" class="form-control" required>
-              <option value="">Choose Your Style Pizza:</option>
-              <option value="New York Style">New York Style - Thin Crust</option>
-              <option value="Chicago Style">Chicago Style - Deep Dish</option>
-              <option value="Detroit Style">Detroit Style - Square with Crispy Edges</option>
-            </select>  
+        <div class="row">
+          <div class="col">
+            <p>Choose Your First Topping</p>
+            <input type="radio" name="topping1" value="cheese" checked>
+            <label>Extra Cheese</label><br>
+            <input type="radio" name="topping1" value="pepperoni">
+            <label>Pepperoni</label><br>
+            <input type="radio" name="topping1" value="sausage">
+            <label>Sausage</label><br>
+            <input type="radio" name="topping1" value="onion">
+            <label>Onion</label><br>
+            <input type="radio" name="topping1" value="mushroom">
+            <label>Mushroom</label><br>
+            <input type="radio" name="topping1" value="ham">
+            <label>Ham</label><br>
+            <input type="radio" name="topping1" value="pineapple">
+            <label>Pineapple</label><br>
+            <input type="radio" name="topping1" value="bacon">
+            <label>Bacon</label><br>
+            <input type="radio" name="topping1" value="banana">
+            <label>Banana Peppers</label><br>
+            <input type="radio" name="topping1" value="hotdog">
+            <label>Hot Dogs!!!</label><br>
+          </div>
+          <div class="col">
+            <p>Choose Your Second Topping</p>
+            <input type="radio" name="topping2" value="pepperoni">
+            <label>Pepperoni</label><br>
+            <input type="radio" name="topping2" value="sausage">
+            <label>Sausage</label><br>
+            <input type="radio" name="topping2" value="onion">
+            <label>Onion</label><br>
+            <input type="radio" name="topping2" value="mushroom">
+            <label>Mushroom</label><br>
+            <input type="radio" name="topping2" value="ham">
+            <label>Ham</label><br>
+            <input type="radio" name="topping2" value="pineapple">
+            <label>Pineapple</label><br>
+            <input type="radio" name="topping2" value="bacon">
+            <label>Bacon</label><br>
+            <input type="radio" name="topping2" value="banana">
+            <label>Banana Peppers</label><br>
+            <input type="radio" name="topping2" value="hotdog">
+            <label>Hot Dogs!!!</label><br>
+            <input type="radio" name="topping2" value="" checked>
+            <label>No Second Topping</label><br>
+          </div>
+          <div class="col">
+            <p>Choose Your Third Topping</p>
+            <input type="radio" name="topping3" value="pepperoni">
+            <label>Pepperoni</label><br>
+            <input type="radio" name="topping3" value="sausage">
+            <label>Sausage</label><br>
+            <input type="radio" name="topping3" value="onion">
+            <label>Onion</label><br>
+            <input type="radio" name="topping3" value="mushroom">
+            <label>Mushroom</label><br>
+            <input type="radio" name="topping3" value="ham">
+            <label>Ham</label><br>
+            <input type="radio" name="topping3" value="pineapple">
+            <label>Pineapple</label><br>
+            <input type="radio" name="topping3" value="bacon">
+            <label>Bacon</label><br>
+            <input type="radio" name="topping3" value="banana">
+            <label>Banana Peppers</label><br>
+            <input type="radio" name="topping3" value="hotdog">
+            <label>Hot Dogs!!!</label><br>
+            <input type="radio" name="topping3" value="" checked>
+            <label>No Third Topping</label><br>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <p>Choose Your First Topping</p>
-          <input type="radio" name="topping1" value="cheese" checked>
-          <label>Extra Cheese</label><br>
-          <input type="radio" name="topping1" value="pepperoni">
-          <label>Pepperoni</label><br>
-          <input type="radio" name="topping1" value="sausage">
-          <label>Sausage</label><br>
-          <input type="radio" name="topping1" value="onion">
-          <label>Onion</label><br>
-          <input type="radio" name="topping1" value="mushroom">
-          <label>Mushroom</label><br>
-          <input type="radio" name="topping1" value="ham">
-          <label>Ham</label><br>
-          <input type="radio" name="topping1" value="pineapple">
-          <label>Pineapple</label><br>
-          <input type="radio" name="topping1" value="bacon">
-          <label>Bacon</label><br>
-          <input type="radio" name="topping1" value="banana">
-          <label>Banana Peppers</label><br>
-          <input type="radio" name="topping1" value="hotdog">
-          <label>Hot Dogs!!!</label><br>
-        </div>
-        <div class="col">
-          <p>Choose Your Second Topping</p>
-          <input type="radio" name="topping2" value="pepperoni">
-          <label>Pepperoni</label><br>
-          <input type="radio" name="topping2" value="sausage">
-          <label>Sausage</label><br>
-          <input type="radio" name="topping2" value="onion">
-          <label>Onion</label><br>
-          <input type="radio" name="topping2" value="mushroom">
-          <label>Mushroom</label><br>
-          <input type="radio" name="topping2" value="ham">
-          <label>Ham</label><br>
-          <input type="radio" name="topping2" value="pineapple">
-          <label>Pineapple</label><br>
-          <input type="radio" name="topping2" value="bacon">
-          <label>Bacon</label><br>
-          <input type="radio" name="topping2" value="banana">
-          <label>Banana Peppers</label><br>
-          <input type="radio" name="topping2" value="hotdog">
-          <label>Hot Dogs!!!</label><br>
-          <input type="radio" name="topping2" value="" checked>
-          <label>No Second Topping</label><br>
-        </div>
-        <div class="col">
-          <p>Choose Your Third Topping</p>
-          <input type="radio" name="topping3" value="pepperoni">
-          <label>Pepperoni</label><br>
-          <input type="radio" name="topping3" value="sausage">
-          <label>Sausage</label><br>
-          <input type="radio" name="topping3" value="onion">
-          <label>Onion</label><br>
-          <input type="radio" name="topping3" value="mushroom">
-          <label>Mushroom</label><br>
-          <input type="radio" name="topping3" value="ham">
-          <label>Ham</label><br>
-          <input type="radio" name="topping3" value="pineapple">
-          <label>Pineapple</label><br>
-          <input type="radio" name="topping3" value="bacon">
-          <label>Bacon</label><br>
-          <input type="radio" name="topping3" value="banana">
-          <label>Banana Peppers</label><br>
-          <input type="radio" name="topping3" value="hotdog">
-          <label>Hot Dogs!!!</label><br>
-          <input type="radio" name="topping3" value="" checked>
-          <label>No Third Topping</label><br>
-        </div>
-      </div>
-    <button type="submit" class="btn btn-info">Get Your Pizza Total</button>
-    </form>
+      <button type="submit" class="btn btn-info">Get Your Pizza Total</button>
+      </form>
+    </div>
     <div class="output">
       <h3>Total:</h3>
       <p>Your <span id="finalSize">SIZE</span> <span id="finalStyle">STYLE</span> pizza, with <span id="finalTopping1">Topping 1</span><span id="finalTopping2">Topping 2</span><span id="finalTopping3">Topping 3</span> comes out to $<span id="finalCost"> COST</span></p>
     </div>
-  </div>
+    <ul class="links">
+      <p>Follow us on Instagram and Twitter</p>
+      <li><img src="img\ig3.png" alt="Instagram logo"></li>
+      <li><img src="img\twitter.jpg" alt="Twitter logo"></li>
+    </ul>
+  </section>
 </body>
 </html>

@@ -68,6 +68,16 @@ let pizza = new Pizza
 pizza.cost();
 Expected Output: A new pizza object, with cost presently undefined.
 
+Test: "It should take out cost prototype and increment the value up as different sizes values are provided"
+Code: Pizza.prototype.cost = function() {
+  let cost = 0;
+}
+let pizza = new Pizza
+if (size === "medium) {
+  cost += 9;
+}
+Expected Output: A new pizza object, with a cost of 9.
+
 ## Known Bugs 
 
 * _No Known Bugs._  

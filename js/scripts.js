@@ -1,10 +1,11 @@
 // Business Logic
-function Pizza(size, [topping1, topping2, topping3], style) {
+function Pizza(size, style, [topping1, topping2, topping3]) {
   this.size = size;
+  this.style = style
+  this.toppings = [topping1, topping2, topping3]
   this.topping1 = topping1;
   this.topping2 = topping2;
   this.topping3 = topping3;
-  this.style = style
 }
 
 Pizza.prototype.cost = function() {
@@ -97,3 +98,24 @@ const pizza = new Pizza("medium", ["cheese", "pepperoni", "sausage"], "new york"
 console.log(pizza);
 
 // UI Logic
+
+$(document).ready(function() {
+  $("form").submit(function(event) {
+    event.preventDefault();
+    let size = $("select#size option:selected").val();
+    let style = $("select#style option:selected").val();
+    let topping1 = $("input:radio[name=topping1]:checked").val();
+    let topping2 = $("input:radio[name=topping2]:checked").val();
+    let topping3 = $("input:radio[name=topping3]:checked").val();
+    const myPizza = new Pizza(size, style, [topping1, topping2, topping3]);
+    console.log(myPizza);
+    console.log(size);
+    console.log(style);
+    console.log(topping1);
+    console.log(topping2);
+    console.log(topping3);
+    // console.log(toppings);
+    $(".output").fadeIn();
+    window.scrollTo(0,document.body.scrollHeight);
+  })
+})

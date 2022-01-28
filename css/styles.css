@@ -1,6 +1,11 @@
 body {
   background-color: goldenrod;
 }
+
+.output {
+  display: none;
+}
+
 /* html {
   font-family: sans-serif;
 }

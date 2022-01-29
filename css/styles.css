@@ -106,13 +106,17 @@ input:checked {
   font-size: larger;
 }
 
+.links p {
+  margin: 20px;
+}
+
 .links li {
   list-style: none;
 }
 
 .links li a {
   display: inline-block;
-  transform: scale(.35);
+  transform: scale(.30);
   transition: .5s;
 }
 

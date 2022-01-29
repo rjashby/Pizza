@@ -3,7 +3,7 @@
 
 #### By _**Ryan Ashby**_ 
 
-#### _This application serves to take in a number from the user, and change that number into a string of automated responses based on the number inputted._ 
+#### _This application will taken in input from a user regarding the size, style, and toppings they want for a pizza, and return a cost based on the choices via a submit button, displaying the choices and cost at the bottom._
 
 ### _Link to GitHub Repository_
 
@@ -25,7 +25,13 @@
 
 ## Description 
 
-_This application will_ 
+_This application works as a pizza generator and cost calculator. Specifically, the backend logic creates a pizza constructor object, which takes in size, style, and three toppings as properties. Sizes can be medium, large or extra large. Styles can be New York, Chicago, or Detroit style pizzas. Toppings include pepperoni, mushrooms, hot dogs, and many more._
+
+_Once the user has selected their size, style, and toppings, they can submit their choices through a submit button. The submit button creates a new pizza object, and runs a cost prototype method, calculating the total cost of the pizza based on the selection made_
+
+_Ultimately, the user will be told their selections and the total cost of their pizza via an initially hidden div, which is shown upon clicking submit_
+
+_As an aside, this project will have two branches. Once branch for a more traditional static site, and another where a continuous looping video of an individual making a pizza plays in the background. To alternate between the branches, you can checkout the static site on the "static" branch._
 
 ## Setup/Installation Requirements 
 
@@ -47,29 +53,29 @@ _This application will_
 
 ## Tests/Specs
 
-Describe: Pizza(size, ["topping1", "topping2"])
+#### Describe: Pizza(size, ["topping1", "topping2"])
 
-Test: "It should return a Pizza object with size and toppings properties."
-Code: const pizza = new Pizza("large", ["cheese", "pepperoni"]);
-Expected Output: Pizza {size: "large", toppings: ["cheese", "pepperoni"], }
+*Test:* "It should return a Pizza object with size and toppings properties."
+*Code:* const pizza = new Pizza("large", ["cheese", "pepperoni"]);
+*Expected Output:* Pizza {size: "large", toppings: ["cheese", "pepperoni"], }
 
 
-Test: "It should return a Pizza object with size and toppings and type properties"
-Code: const pizza = new Pizza("large", ["cheese", "pepperoni", "sausage"], "new york");
-Expected Output: Pizza {size: "large", toppings: ["cheese", "pepperoni", "sausage"], style: "new york"}
+*Test:* "It should return a Pizza object with size and toppings and type properties"
+*Code:* const pizza = new Pizza("large", ["cheese", "pepperoni", "sausage"], "new york");
+*Expected Output:* Pizza {size: "large", toppings: ["cheese", "pepperoni", "sausage"], style: "new york"}
 
-Describe: Pizza.prototype.cost
+#### Describe: Pizza.prototype.cost
 
-Test: "It should build a prototype method for our Pizza constructor, with a variable to initiate a cost variable, set to 0."
-Code: Pizza.prototype.cost = function() {
+*Test:* "It should build a prototype method for our Pizza constructor, with a variable to initiate a cost variable, set to 0."
+*Code:* Pizza.prototype.cost = function() {
   let cost = 0;
 }
 let pizza = new Pizza
 pizza.cost();
-Expected Output: A new pizza object, with cost presently undefined.
+*Expected Output:* A new pizza object, with cost presently undefined.
 
-Test: "It should take our cost prototype and increment it upward as different sizes values are provided."
-Code: Pizza.prototype.cost = function() {
+*Test:* "It should take our cost prototype and increment it upward as different sizes values are provided."
+*Code:* Pizza.prototype.cost = function() {
   let cost = 0;
 
   if (this.size === "medium") {
@@ -78,22 +84,22 @@ Code: Pizza.prototype.cost = function() {
   return cost;
 }
 console.log(pizza.cost());
-Expected Output: 9
+*Expected Output:* 9
 
-Test: "It should take our cost prototype and increment it upwards as different style values are provided."
-Code: Pizza.prototype.cost = function() {
+*Test:* "It should take our cost prototype and increment it upwards as different style values are provided."
+*Code:* Pizza.prototype.cost = function() {
   let cost = 0;
 
-  if (this.style === "newyork") {
+  if (this.style === "New York Style") {
     cost += 1;
   }
   return cost;
 }
 console.log(pizza.cost());
-Expected Output: 1
+*Expected Output:* 1
 
-Test: "It should take our cost prototype and increment it upwards as different topping values are provided."
-Code: Pizza.prototype.cost = function() {
+*Test:* "It should take our cost prototype and increment it upwards as different topping values are provided."
+*Code:* Pizza.prototype.cost = function() {
   let cost = 0;
 
   if (this.topping1 === "pepperoni") {
@@ -102,7 +108,7 @@ Code: Pizza.prototype.cost = function() {
   return cost;
 }
 console.log(pizza.cost());
-Expected Output: 2
+*Expected Output:* 2
 
 ## Known Bugs 
 

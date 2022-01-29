@@ -93,3 +93,29 @@ input {
 input:checked {
   border: 6px solid black;
 }
+
+
+.links {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: larger;
+}
+
+.links li {
+  list-style: none;
+}
+
+.links li a {
+  display: inline-block;
+  transform: scale(.35);
+  transition: .5s;
+}
+
+.links li a:hover {
+  transform: scale(0.5) translateY(-20px);
+}

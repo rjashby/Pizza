@@ -3,7 +3,7 @@
 
 #### By _**Ryan Ashby**_ 
 
-#### _This application will taken in input from a user regarding the size, style, and toppings they want for a pizza, and return a cost based on the choices via a submit button, displaying the choices and cost at the bottom._
+#### _This application will take in input from a user regarding the size, style, and toppings they want for a pizza, and return a cost based on the choices via a submit button, displaying the choices and cost at the bottom._
 
 ### _Link to GitHub Repository_
 
